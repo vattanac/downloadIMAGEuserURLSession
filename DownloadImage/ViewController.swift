@@ -34,7 +34,7 @@ class ViewController: UIViewController,URLSessionDownloadDelegate,URLSessionDele
         
         let load = Float(totalBytesWritten)*100/Float(totalBytesExpectedToWrite)
         DispatchQueue.main.async {
-            self.label.text = String(load)
+            self.label.text = String("\(load)%")
         }
     }
 
